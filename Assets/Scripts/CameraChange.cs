@@ -22,7 +22,7 @@ public class CameraChange : MonoBehaviour
         }
     }
 
-    IEnumerator CamChange () {
+    public IEnumerator CamChange () {
         yield return new WaitForSeconds(0.01f);
         if(CamMode == 0) {
             PerspectiveCam.SetActive(true);
