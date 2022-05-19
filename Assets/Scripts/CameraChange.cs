@@ -6,19 +6,20 @@ public class CameraChange : MonoBehaviour
 {
     public GameObject PerspectiveCam;
     public GameObject OrthographicCam;
-    public int CamMode;
+    public static int CamMode;
 
     // Update is called once per frame
     void Update ()
     {
         if(Input.GetButtonDown ("Camera")) {
+			StartCoroutine(CamChange());
             if(CamMode == 1) {
                 CamMode = 0;
             }
             else {
                 CamMode += 1;
             }
-            StartCoroutine(CamChange());
+            
         }
     }
 
@@ -27,10 +28,12 @@ public class CameraChange : MonoBehaviour
         if(CamMode == 0) {
             PerspectiveCam.SetActive(true);
             OrthographicCam.SetActive(false);
+            GameObject.Find("Button").transform.position = new Vector3(10, 10, 10);
         }
         if(CamMode == 1) {
             OrthographicCam.SetActive(true);
             PerspectiveCam.SetActive(false);
+            GameObject.Find("Button").transform.position = new Vector3(3, 5.9f, -10);
         }
     }
 }

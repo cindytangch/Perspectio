@@ -23,9 +23,13 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         float horizontalInput = Input.GetAxis("Horizontal");
-        float verticalInput = Input.GetAxis("Vertical");
-
-        rb.velocity = new Vector3(horizontalInput * movementSpeed, rb.velocity.y, verticalInput * movementSpeed);
+		float verticalInput = Input.GetAxis("Vertical");
+		
+		if (CameraChange.CamMode == 1){
+			rb.velocity = new Vector3(horizontalInput * movementSpeed, rb.velocity.y, 0);
+		}else{
+			rb.velocity = new Vector3(horizontalInput * movementSpeed, rb.velocity.y, verticalInput * movementSpeed);
+		}
 
         if (Input.GetButtonDown("Jump") && IsGrounded())
         {
@@ -45,8 +49,9 @@ public class PlayerMovement : MonoBehaviour
         {
             // Destroy(collision.transform.parent.gameObject);
 
-            rb.velocity = new Vector3(rb.velocity.x, rb.velocity.y, 5f);
-            rb.transform.Translate(0,0,20f);
+			rb.velocity = new Vector3(rb.velocity.x, rb.velocity.y, 5f);
+			rb.transform.Translate(0,0,20f);
+
             // Jump();
         }
     }
