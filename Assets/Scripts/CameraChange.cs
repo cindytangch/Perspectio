@@ -6,20 +6,19 @@ public class CameraChange : MonoBehaviour
 {
     public GameObject PerspectiveCam;
     public GameObject OrthographicCam;
-    public static int CamMode;
+    public static int CamMode = 0;
 
     // Update is called once per frame
     void Update ()
     {
         if(Input.GetButtonDown ("Camera")) {
-			StartCoroutine(CamChange());
             if(CamMode == 1) {
                 CamMode = 0;
             }
             else {
                 CamMode += 1;
             }
-            
+			StartCoroutine(CamChange());
         }
     }
 
