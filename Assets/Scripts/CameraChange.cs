@@ -6,12 +6,12 @@ public class CameraChange : MonoBehaviour
 {
     public GameObject PerspectiveCam;
     public GameObject OrthographicCam;
-    public static int CamMode = 1;
+    public static int CamMode = 0;
 
 		// Start is called before the first frame update
     void Start()
     {
-        CamMode = 1;
+        CamMode = 0;
     }
 
     // Update is called once per frame
@@ -31,16 +31,16 @@ public class CameraChange : MonoBehaviour
     public IEnumerator CamChange () {
         yield return new WaitForSeconds(0.01f);
 
-        if(CamMode == 0) {
+        if(CamMode == 1) {
             PerspectiveCam.SetActive(true);
             OrthographicCam.SetActive(false);
-            GameObject.Find("Button").transform.position = new Vector3(15, 15, 15);
+            GameObject.Find("Button").transform.position = new Vector3(10, 10, 10);
         }
 
-        if(CamMode == 1) {
+        if(CamMode == 0) {
             OrthographicCam.SetActive(true);
             PerspectiveCam.SetActive(false);
-            GameObject.Find("Button").transform.position = new Vector3(7, 5.9f, -10);
+            GameObject.Find("Button").transform.position = new Vector3(3, 5.9f, -10);
         }
     }
 }

@@ -19,18 +19,18 @@ public class PlayerLife : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.CompareTag("Killer"))
+        if (collision.gameObject.CompareTag("Danger"))
         {
             GetComponent<MeshRenderer>().enabled = false;
             GetComponent<Rigidbody>().isKinematic = true;
-            GetComponent<PlayerMovement>().enabled = false;
+            GetComponent<PlayerMovement03>().enabled = false;
             Die();
         }
     }
 
     void Die()
     {
-        Invoke(nameof(ReloadLevel), 1f);
+        Invoke(nameof(ReloadLevel), 0.5f);
         dead = true;
         // deathSound.Play();
     }
