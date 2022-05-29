@@ -44,8 +44,8 @@ GameObject:
   - component: {fileID: 8792427773138242333}
   - component: {fileID: 8792427773138242332}
   - component: {fileID: 8792427773138242329}
-  - component: {fileID: 8792427773138242328}
-  - component: {fileID: 8792427773138242330}
+  - component: {fileID: 1254080895}
+  - component: {fileID: 1254080896}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -149,7 +149,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
---- !u!114 &8792427773138242328
+--- !u!114 &1254080895
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -158,7 +158,19 @@ MonoBehaviour:
   m_GameObject: {fileID: 8792427773138242323}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f1962aa3d1f9e49dba3304212b022e53, type: 3}
+  m_Script: {fileID: 11500000, guid: 5957bc58231de6b428081888f74a99a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1254080896
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8792427773138242323}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fae0906e69220494f84ea442f8f863ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   movementSpeed: 5
@@ -168,15 +180,3 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   jumpSound: {fileID: 0}
---- !u!114 &8792427773138242330
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8792427773138242323}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6138d5847d23e442f9727d090f22da72, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 

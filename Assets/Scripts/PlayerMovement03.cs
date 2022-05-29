@@ -5,8 +5,8 @@ using UnityEngine;
 public class PlayerMovement03 : MonoBehaviour
 {
     Rigidbody rb;
-    [SerializeField] float movementSpeed = 6f;
-    [SerializeField] float jumpForce = 20f;
+    [SerializeField] float movementSpeed = 5f;
+    [SerializeField] float jumpForce = 8f;
 
     [SerializeField] Transform groundCheck;
     [SerializeField] LayerMask ground;

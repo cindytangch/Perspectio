@@ -416,6 +416,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1962aa3d1f9e49dba3304212b022e53, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  jumpforce: 0
+  moveSpeed: 0
+  groundCheck: {fileID: 0}
+  ground:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!54 &669142797
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -738,7 +744,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PerspectiveCam: {fileID: 963194225}
   OrthographicCam: {fileID: 302384283}
-  CamMode: 0
 --- !u!4 &1644674653
 Transform:
   m_ObjectHideFlags: 0

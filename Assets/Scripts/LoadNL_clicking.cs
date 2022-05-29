@@ -7,7 +7,7 @@ public class LoadNL_clicking : MonoBehaviour
 {
     public void Clicked(string LevelName)
     {
-      SceneManager.LoadScene(LevelName);
-        
+      SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+
     }
 }
