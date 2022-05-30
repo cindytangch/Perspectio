@@ -51,7 +51,7 @@ public class PlayerMovement03 : MonoBehaviour
             // Destroy(collision.transform.parent.gameObject);
 
 				rb.velocity = new Vector3(rb.velocity.x, rb.velocity.y, 5f);
-				rb.transform.Translate(0,0,20f);
+				rb.transform.Translate(0,0,30f);
 
             // Jump();
         }

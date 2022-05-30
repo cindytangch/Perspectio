@@ -35,7 +35,7 @@ public class CameraChange : MonoBehaviour
         if(CamMode == 1) {
             PerspectiveCam.SetActive(true);
             OrthographicCam.SetActive(false);
-            GameObject.Find("Button").transform.position = new Vector3(10, 10, 10);
+            GameObject.Find("Button").transform.position = new Vector3(15, 15, 15);
         }
 
         if(CamMode == 0) {
