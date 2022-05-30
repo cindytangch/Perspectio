@@ -267,7 +267,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 378385412}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
   m_Name: 
@@ -293,7 +293,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Essayez de changer de point de vue en appuyant sur 'C'
+  m_Text: Try changing your point of view by cliking on 'C'
 --- !u!222 &378385416
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -793,8 +793,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   delay: 0.04
-  fullText: '"All our knowledge is the offspring of our perceptions."  - Leonardo
-    Da Vinci '
+  fullText: 'Try to change the viewpoint by pressing ''C''. '
 --- !u!1 &2054169147
 GameObject:
   m_ObjectHideFlags: 0

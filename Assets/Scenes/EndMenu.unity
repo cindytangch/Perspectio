@@ -322,9 +322,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   delay: 0.01
-  fullText: "F\xE9licitations, vous venez de terminer la version d'essai de Perspectio.
-    Peut-\xEAtre aurez-vous la chance de jouer \xE0 la version compl\xE8te dans un
-    futur proche... "
+  fullText: 'Congratulations, you have just finished the trial version of Perspectio.
+    Maybe you will be lucky enough to play the full version in the near future... '
 --- !u!114 &191977748
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -862,7 +861,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Quitter le jeu
+  m_Text: Quit Game
 --- !u!222 &1503815400
 CanvasRenderer:
   m_ObjectHideFlags: 0

@@ -696,9 +696,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e8cb9a66c6e0d64b9d83fe804189cc9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  delay: 0.04
-  fullText: '"All our knowledge has its origins in our perceptions."  - Leonardo
-    Da Vinci '
+  delay: 0.02
+  fullText: '"All our knowledge originates in our perceptions."  - Leonardo da Vinci '
 --- !u!1 &2054169147
 GameObject:
   m_ObjectHideFlags: 0

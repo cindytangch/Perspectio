@@ -751,7 +751,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   delay: 0.06
-  fullText: Cliquez sur la citation pour continuer...
+  fullText: 'Click on the quote to continue '
 --- !u!114 &1409057139
 MonoBehaviour:
   m_ObjectHideFlags: 0
