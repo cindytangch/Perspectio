@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657868, g: 0.49641263, b: 0.5748171, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -270,7 +270,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8fcd957f8b4b43b9abb55e6e123a85e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &220283240
+--- !u!1 &191977745
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -278,9 +278,10 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 220283241}
-  - component: {fileID: 220283243}
-  - component: {fileID: 220283242}
+  - component: {fileID: 191977746}
+  - component: {fileID: 191977749}
+  - component: {fileID: 191977748}
+  - component: {fileID: 191977747}
   m_Layer: 5
   m_Name: Text (Legacy)
   m_TagString: Untagged
@@ -288,16 +289,16 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!224 &220283241
+--- !u!224 &191977746
 RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 220283240}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_GameObject: {fileID: 191977745}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 3, y: 3, z: 3}
+  m_LocalScale: {x: 0.9652509, y: 0.9534796, z: 0.9417082}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 987513131}
@@ -305,16 +306,32 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 5.2289, y: 41.7711}
-  m_SizeDelta: {x: 300, y: 36.4899}
+  m_AnchoredPosition: {x: 13, y: 45.335}
+  m_SizeDelta: {x: 532.2275, y: 90.6696}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &220283242
+--- !u!114 &191977747
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 220283240}
+  m_GameObject: {fileID: 191977745}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e8cb9a66c6e0d64b9d83fe804189cc9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  delay: 0.05
+  fullText: "F\xE9licitations, vous venez de terminer la version d'essai de Perspectio.
+    Peut-\xEAtre aurez-vous la chance de jouer \xE0 la version compl\xE8te dans un
+    futur proche."
+--- !u!114 &191977748
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 191977745}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
@@ -330,25 +347,25 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: bd0847dcf92dc56459b26d80fd5f8964, type: 3}
-    m_FontSize: 20
+    m_FontSize: 19
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 0
-    m_MaxSize: 230
-    m_Alignment: 1
+    m_MinSize: 1
+    m_MaxSize: 40
+    m_Alignment: 0
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: GAME COMPLETED
---- !u!222 &220283243
+  m_Text: 
+--- !u!222 &191977749
 CanvasRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 220283240}
+  m_GameObject: {fileID: 191977745}
   m_CullTransparentMesh: 1
 --- !u!1 &658847405
 GameObject:
@@ -576,7 +593,7 @@ RectTransform:
   m_LocalScale: {x: 1.0619, y: 1.0619, z: 1.0619}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 220283241}
+  - {fileID: 191977746}
   m_Father: {fileID: 777204545}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -845,9 +862,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Quit
-
-'
+  m_Text: Quitter le jeu
 --- !u!222 &1503815400
 CanvasRenderer:
   m_ObjectHideFlags: 0
