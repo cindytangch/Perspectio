@@ -11,7 +11,7 @@ public class PlayerLife : MonoBehaviour
 
     private void Update()
     {
-        if (transform.position.y < -1f && !dead)
+        if (transform.position.y < -30f && !dead)
         {
             Die();
         }
@@ -30,7 +30,7 @@ public class PlayerLife : MonoBehaviour
 
     void Die()
     {
-        Invoke(nameof(ReloadLevel), 0.5f);
+        Invoke(nameof(ReloadLevel), 0.1f);
         dead = true;
         // deathSound.Play();
     }

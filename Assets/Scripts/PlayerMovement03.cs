@@ -13,6 +13,11 @@ public class PlayerMovement03 : MonoBehaviour
 
     [SerializeField] AudioSource jumpSound;
 
+		[SerializeField] float zTranslation1 = 0;
+		[SerializeField] float zTranslation2 = 0;
+		[SerializeField] float zTranslation3 = 0;
+		[SerializeField] float zTranslation4 = 0;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -46,15 +51,33 @@ public class PlayerMovement03 : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.CompareTag("Button"))
+			if (CameraChange.CamMode == 0){
+				if (collision.gameObject.CompareTag("Button"))
         {
             // Destroy(collision.transform.parent.gameObject);
-
 				rb.velocity = new Vector3(rb.velocity.x, rb.velocity.y, 5f);
-				rb.transform.Translate(0,0,27.5f);
-
-            // Jump();
+				rb.transform.Translate(0,0,zTranslation1);
+				// rb.transform.Translate(0,0,27.5f);
         }
+
+				if (collision.gameObject.CompareTag("Button 2"))
+        {
+				rb.velocity = new Vector3(rb.velocity.x, rb.velocity.y, 5f);
+				rb.transform.Translate(0,0,zTranslation2);
+        }
+
+				if (collision.gameObject.CompareTag("Button 3"))
+        {
+				rb.velocity = new Vector3(rb.velocity.x, rb.velocity.y, 5f);
+				rb.transform.Translate(0,0,zTranslation3);
+        }
+
+				if (collision.gameObject.CompareTag("Button 4"))
+        {
+				rb.velocity = new Vector3(rb.velocity.x, rb.velocity.y, 5f);
+				rb.transform.Translate(0,0,zTranslation4);
+        }
+			}
     }
 
     bool IsGrounded()

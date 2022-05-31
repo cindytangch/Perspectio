@@ -9,6 +9,9 @@ TagManager:
   - Killer
   - Button
   - Danger
+  - Button 2
+  - Button 3
+  - Button 4
   layers:
   - Default
   - TransparentFX

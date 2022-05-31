@@ -35,13 +35,22 @@ public class CameraChange : MonoBehaviour
         if(CamMode == 1) {
             PerspectiveCam.SetActive(true);
             OrthographicCam.SetActive(false);
-            GameObject.Find("Button").transform.position = new Vector3(15, 15, 15);
+						GameObject.Find("Button").GetComponent<Collider>().isTrigger = true;
+						GameObject.Find("Button (2)").GetComponent<Collider>().isTrigger = true;
+						GameObject.Find("Button (3)").GetComponent<Collider>().isTrigger = true;
+						GameObject.Find("Button (4)").GetComponent<Collider>().isTrigger = true;
+            // GameObject.Find("Button").transform.position = new Vector3(15, 15, 15);
+						// GameObject.Find("Button").transform.Translate(0, 200, 0);
         }
 
         if(CamMode == 0) {
             OrthographicCam.SetActive(true);
             PerspectiveCam.SetActive(false);
-            GameObject.Find("Button").transform.position = new Vector3(8, 6, -10);
+            // GameObject.Find("Button").transform.position = new Vector3(8, 6, -10);
+						GameObject.Find("Button").GetComponent<Collider>().isTrigger = false;
+						GameObject.Find("Button (2)").GetComponent<Collider>().isTrigger = false;
+						GameObject.Find("Button (3)").GetComponent<Collider>().isTrigger = false;
+						GameObject.Find("Button (4)").GetComponent<Collider>().isTrigger = false;
         }
     }
 }
