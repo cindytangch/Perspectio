@@ -17,6 +17,7 @@ public class PlayerMovement03 : MonoBehaviour
 		[SerializeField] float zTranslation2 = 0;
 		[SerializeField] float zTranslation3 = 0;
 		[SerializeField] float zTranslation4 = 0;
+		[SerializeField] float zTranslation5 = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -76,6 +77,12 @@ public class PlayerMovement03 : MonoBehaviour
         {
 				rb.velocity = new Vector3(rb.velocity.x, rb.velocity.y, 5f);
 				rb.transform.Translate(0,0,zTranslation4);
+        }
+
+				if (collision.gameObject.CompareTag("Button 5"))
+        {
+				rb.velocity = new Vector3(rb.velocity.x, rb.velocity.y, 5f);
+				rb.transform.Translate(0,0,zTranslation5);
         }
 			}
     }

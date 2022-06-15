@@ -7,11 +7,12 @@ public class CameraChange : MonoBehaviour
     public GameObject PerspectiveCam;
     public GameObject OrthographicCam;
     public static int CamMode = 1;
+		[SerializeField] int StartCamMode;
 
 		// Start is called before the first frame update
     void Start()
     {
-        CamMode = 1;
+        CamMode = StartCamMode;
     }
 
     // Update is called once per frame
