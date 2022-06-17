@@ -793,7 +793,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   delay: 0.04
-  fullText: 'Perception VS Reality '
+  fullText: 'Bonus Level: Now, mix both concepts from the previous levels... Perception
+    or Reality? '
 --- !u!1 &2054169147
 GameObject:
   m_ObjectHideFlags: 0
